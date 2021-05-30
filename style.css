@@ -12,6 +12,12 @@ body {
 :focus {
     outline: 0 !important
 }
+.custom-color {
+	color: #2271B3;
+}
+.custom-background-color {
+	background-color: #F5D400;
+}
 
 /* Button 
 ----------------------------------------------------------------------------- */
@@ -21,11 +27,9 @@ body {
   font-family: 'Signika Negative', sans-serif;
   text-transform: uppercase;
   border-radius: 0;
-  background-color: #F5D400;
 }
 .btn:focus,.btn:active:focus {
   outline: none;
-  color: #2271B3;
 }
 .btn-custom,.btn-custom-sm{
 	border: 2px solid rgb(255, 255, 255);
@@ -65,7 +69,6 @@ body {
   
   .topnav a:hover {
 	background-color: #F3FF52;
-	color: #2271B3
   }
   
   .topnav a.active {
@@ -139,7 +142,6 @@ body {
 
 /* Books section */
 .book-section {
-	background-color: #2271B3;
 	color: #fff;
 	text-align: center;
 	padding: 10px;
@@ -153,7 +155,6 @@ body {
 }
   
 .grid-container > div {
-	background-color: #F5D400;
 	text-align: center;
 	padding: 20px;
 	font-size: 30px;
@@ -173,7 +174,6 @@ body {
 
 /* Footer */
 .page-footer{
-	color: #2271B3;
 	padding: 0;
 }
 
@@ -213,4 +213,16 @@ body {
 	color: black;
 	text-decoration: none;
 	cursor: pointer;
+}
+
+.form-title{
+	color: #000000;
+	font-size: 30px;
+	font-weight: 5px;
+}
+
+.form-section-title{
+	font-size: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }

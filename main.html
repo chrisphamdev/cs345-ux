@@ -22,7 +22,7 @@
 
 <body data-spy="scroll" data-offset="100", style="margin: 0;">
 
-  <div class="topnav">
+  <div class="topnav custom-color">
     <a class="nav-title"> COMPSCI345 Chris Pham A2</a>
     <a class="active" href="#home">Home</a>
     <a href="#home">Discussion</a>
@@ -38,25 +38,60 @@
           <div>
             <h1 class="intro-title">CS345 Library</h1>
             <p class="intro-text">Click the button below to sign up</p>
-            <a class="btn btn-custom" id="openForm">Get started</a>
+            <a class="btn btn-custom custom-color custom-background-color" id="trigger-modal">Get started</a>
           </div>
         </div>
       </div>
     </section>
 
     <!-- The form will pop up as a modal window -->
-    <div id="signUpForm" class="sign-up-form">
+    <div id="bookclubrego" class="sign-up-form">
       <!-- Modal content -->
       <div class="form-content">
         <span class="close">&times;</span>
-        <p>Some text in the Modal..</p>
+        <a class="form-title">Sign Up Form</a><br>
+        <a class="form-section-title custom-color">User Details</a><br>
+        <div id="userDetails">
+          <form>
+            <label for="fname">Given name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Surname:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username"><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"><br>
+          </form>
+        </div>
+
+        <div id="addresses">
+          <a class="form-section-title custom-color">Addresses</a>
+          <form>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname">
+          </form>
+        </div>
+        
+        <div id="contacts">
+          <a class="form-section-title custom-color">Contacts</a>
+          <form>
+            <label for="fname">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="lname">Mobile Number:</label><br>
+            <input type="text" id="phonenumber" name="phonenumber"><br>
+            <br>
+          </form>
+          <a class="btn btn-custom" id="openForm">Submit</a>
+        </div>
       </div>
     </div>
     
     <section id="books">
-      <div class="book-section">
-        <h1 class="intro-title">Check out our books</h1>
-        <div class="grid-container">
+      <div class="book-section custom-color no-padding">
+        <h1 class="intro-title custom-color">FEATURES BOOKS IN OUR LIBRARY</h1>
+        <div class="grid-container custom-background-color">
           <div class="item1">
             <a href="#books">Placeholder Book One</a>
             <div class="box-in-grid">
@@ -81,7 +116,7 @@
     <!-- /End HOME -->
 
     <!-- footer -->
-    <footer class="page-footer no-padding">
+    <footer class="page-footer no-padding custom-color">
         <div class="center-text"> 
             <p>Created by Chris Pham, UPI qpha842</a></p>
         </div>
@@ -92,10 +127,10 @@
 
 <script>
   // Get the modal
-  var modal = document.getElementById("signUpForm");
+  var modal = document.getElementById("bookclubrego");
   
   // Get the button that opens the modal
-  var btn = document.getElementById("openForm");
+  var btn = document.getElementById("trigger-modal");
   
   // Get the <span> element that closes the modal
   var span = document.getElementsByClassName("close")[0];
